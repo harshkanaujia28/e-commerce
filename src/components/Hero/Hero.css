@@ -1,0 +1,35 @@
+.hero-secton{
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(180deg, #7dace4,#e1ffea22 60% );
+}
+h3 {
+    color: rgb(15, 14, 14);
+    font-size: 25px;
+  }
+
+
+.content {
+    align-items: center;
+    padding-top: 30px;
+    margin-left: 30px;
+  }
+  .center {
+  
+    margin-left: 50px;
+   
+  }
+  h1{
+    font-size:70px;
+  }
+  .explore{
+    border: none;
+    height: 60px;
+    width: 250px;
+    background-color: black;
+    color:white;
+    font-size: 20px;
+    border-radius: 4px;
+  }
