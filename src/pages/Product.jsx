@@ -1,23 +1,24 @@
-import React, { useContext } from 'react';
-import { useParams } from 'react-router-dom';
-import ShopContext  from '../Context/ShopContext';
-
-
-
+import React, { useContext } from "react";
+import { useParams } from "react-router-dom";
+import { ShopContext } from "../Context/ShopContext";
+import Breadcrums from "../components/Breadcrums/Breadcrums"; 
+import Productdisplay from "../components/Productdisplay/Productdisplay";
+import Discriptionbox from "../components/Discriptionbox/Discriptionbox";
+import Explore from "../components/explore me/Explore"
 const Product = () => {
-  const  all_Product  = useContext(ShopContext);
-  const { productId } = useParams();
+  const all_Product = useContext(ShopContext);
+  const  {productId } = useParams();
   const product = all_Product.find((e) => e.id === Number(productId));
-    console.log(productId)
   if (!product) {
     return <div>Product not found</div>;
   }
 
   return (
     <div>
-      {/* <Breadcrumbs product={product}/> */}
-      
-      {/* Add other product details here */}
+      <Breadcrums product={product} />
+      <Productdisplay product={product}/>
+      <Discriptionbox/>
+      <Explore/>
     </div>
   );
 };
@@ -40,10 +41,7 @@ export default Product;
 
 //the purpose of this component is to display a product page, where the product is selected based on the productId parameter in the URL. The Breadcrums component is likely used to display a breadcrumb trail for the product.
 
- //There is a typo in the component name Breadcrums, which should be corrected to Breadcrumbs.
-
-
-
+//There is a typo in the component name Breadcrums, which should be corrected to Breadcrumbs.
 
 //Answer with Web Search
 //Continue
@@ -52,4 +50,4 @@ export default Product;
 
 //Share
 
-//Publish To   
+//Publish To

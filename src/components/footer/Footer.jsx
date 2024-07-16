@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <div className='footer'>
         <div className="footer-logo">
-        ShopMart <i class="fa-brands fa-shopify"></i>
+        ShopMart <i className="fa-brands fa-shopify"></i>
         </div>
         <ul className='footer-links'>
             <li> Company</li>

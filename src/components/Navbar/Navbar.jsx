@@ -6,9 +6,9 @@ export default function Navbar() {
     const [menu,setMenu]=useState("Shop")
   return (
     <div className="navbar">
-      <div class="container">
+      <div className="container">
         <h3>
-          ShopMart <i class="fa-brands fa-shopify"></i>
+          ShopMart <i className="fa-brands fa-shopify"></i>
         </h3>
         <nav>
          <ul>
@@ -21,7 +21,7 @@ export default function Navbar() {
           </ul> 
         </nav>
       
-        <div class="icon">
+        <div className="icon">
         <Link to="/Loginsignup"> <button>  Login </button></Link>
         <img src={cart_icon} alt="" />
         <div className="count">0</div>

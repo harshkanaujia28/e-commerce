@@ -6,7 +6,7 @@ const Explore = () =>{
   return (
     <>
     <div className='Explore'>
-        < h1>New Collection</h1>
+        < h1>Related Product</h1>
           <hr />
         <div className="Explore-item">
             {data_product.map((item,i)=>{
