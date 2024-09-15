@@ -20,5 +20,28 @@
     margin-top: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    
     gap: 30px;
 }
+@media (max-width :825px) {
+    .Exclusive h1{
+        
+        font-size: 30px;
+        
+    }
+    .Exclusive hr{
+        width: 300px;
+        height: 3px;
+       
+    }
+}
+@media (max-width :480px) {
+    .Exclusive-item{
+        
+        grid-template-columns: 1fr 1fr 1fr;
+        
+       
+    }
+    
+}
+

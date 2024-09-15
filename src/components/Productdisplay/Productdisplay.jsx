@@ -6,7 +6,7 @@ import { ShopContext } from '../../Context/ShopContext'
 
 const Productdisplay = (props) => {
     const {product} = props
-    const addToCart = useContext(ShopContext);
+    const {addToCart} = useContext(ShopContext);
 
   return (
     <div className='productdisplay'>

@@ -10,12 +10,14 @@ import women_banner from "./components/Assets/banner_women.png";
 import kids_banner from "./components/Assets/banner_kids.png";
 import Loginsignup from "./pages/Loginsignup";
 import Product from "./pages/Product";
+import Cart from "./pages/Cart";
 export default function App() {
   const router = createBrowserRouter([
     {
       path: "/",
       element: (
         <>
+        <Navbar/>
           <Shop />
         </>
       ),
@@ -79,6 +81,17 @@ export default function App() {
           <Navbar />
           {/* <Breadcrums /> */}
           <Product />
+
+          <Footer />
+        </>
+      ),
+    },
+    {
+      path: "/Cart",
+      element: (
+        <>
+          <Navbar />
+       <Cart />
 
           <Footer />
         </>

@@ -29,4 +29,36 @@ h2 {
     border-radius: 4px;
     margin-top: 10px ;
   }
+  @media (max-width :825px) {
+   .Offer img{
+         height: 400px;   
+   }
+   h2 {
+      
+      font-size:30px;
+    }
+}
+  @media (max-width :480px) {
+   .Offer img{
+         height: 200px; 
+        
+   }
+   h2 {
+      
+      font-size:25px;
+    }
+    .Offer{
+      padding: 0px 0px 0px 0px;
+    }
+}
+@media (max-width :480px) {
+  
+   .Offer{
+     padding: 0px 0px 0px 0px;
+     
+   }
+}
+
+
+
  

@@ -29,7 +29,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-copyright">
-        <hr />
+        
         <p>© 2020 Shopper. All rights reserved</p>
       </div>
     </div>

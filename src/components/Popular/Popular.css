@@ -19,6 +19,31 @@
 .Popular-item{
     margin-top: 50px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns:repeat(4,1fr);
+    
     gap: 30px;
+    
+}
+@media (max-width :1200px) {
+    .Popular-item{
+       
+    }
+}
+@media (max-width :825px) {
+    .Popular h1{
+       
+        font-size: 30px;
+       
+    }
+    .Popular hr{
+        width: 250px;
+        height: 3px;
+       
+    }
+}
+@media (max-width :480px) {
+    .Popular-item{
+        grid-template-columns:repeat(3,1fr);
+        
+    }
 }

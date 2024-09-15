@@ -9,7 +9,7 @@
     align-items: center;
     background: linear-gradient(180deg, #7dace4,#e1ffea22 60% );
     gap: 30px;
-    margin-top: 40px;
+    
 }
 .Subscribe h1{
     color: black;
@@ -46,4 +46,48 @@
     color: white;
     font-size: 16px;
     cursor: pointer;
+}
+@media (max-width :825px) {
+    .Subscribe div{
+       
+        width: 400px;
+        height: 40px;
+       
+    }
+    .Subscribe div button{
+        width: 250px;
+        height: 70px;
+       
+    }
+    .Subscribe h1{
+        
+        font-size: 35px;
+       
+    }
+}
+@media (max-width :480px) {
+    .Subscribe div{
+       
+        width: 400px;
+        height: 40px;
+       
+    }
+    .Subscribe div button{
+        width: 250px;
+        height: 70px;
+       
+    }
+    .Subscribe h1{
+        
+        font-size: 25px;
+       
+    }
+    .Subscribe p{
+        color: #000000;
+        font-size: 15px;
+    }
+    .Subscribe{
+        margin-top: 150px;
+    }
+  
 }

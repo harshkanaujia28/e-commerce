@@ -1,9 +1,17 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "./Navbar.css";
 import cart_icon from '../Assets/cart_icon.png'
-import { Link } from "react-router-dom";
+import { Form, Link } from "react-router-dom";
+import { ShopContext } from "../../Context/ShopContext";
+import menu_icon from '../Assets/menu-icon.png'
 export default function Navbar() {
     const [menu,setMenu]=useState("Shop")
+    const {getDefaultCartItems}= useContext(ShopContext)
+    const[mobileMenu,setMobileMenu] = useState(false);
+    const toggleMenu = ()=>{
+     mobileMenu? setMobileMenu(false) : setMobileMenu(true);
+    }
+    console.log({toggleMenu})
   return (
     <div className="navbar">
       <div className="container">
@@ -11,7 +19,7 @@ export default function Navbar() {
           ShopMart <i className="fa-brands fa-shopify"></i>
         </h3>
         <nav>
-         <ul>
+         <ul className={mobileMenu ?'': 'hide-mobile-menu'}>
           <li onClick={()=>{setMenu("shop")}}>
           <Link to='/'>  Shop{menu==="Shop"?<hr/>:<></>}</Link>
             </li>
@@ -23,11 +31,13 @@ export default function Navbar() {
       
         <div className="icon">
         <Link to="/Loginsignup"> <button>  Login </button></Link>
-        <img src={cart_icon} alt="" />
-        <div className="count">0</div>
-         
+        <Link to='/cart'><img src={cart_icon} alt=""  /> </Link>
+        <div className="count">{getDefaultCartItems()}</div>
+        <img src={menu_icon} alt="" className="menu-icon" onClick={toggleMenu} /> 
          </div>
+         
       </div>
+     
     </div>
   );
 }

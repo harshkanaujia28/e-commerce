@@ -8,8 +8,8 @@ import p7_img from "./product_17.png";
 import p8_img from "./product_28.png";
 import p37_img from "./product_37.jpg";
 import p42_img from "./product_42.jpg";
-import p46_img from "./product_46.jpg";
-import p40_img from "./product_40.jpg";
+
+import Product from "../../pages/Product";
 
 let new_collections = [
   {
@@ -68,6 +68,7 @@ let new_collections = [
     new_price: 100.0,
     old_price: 150.0,
   },
+ 
 
 ];
 

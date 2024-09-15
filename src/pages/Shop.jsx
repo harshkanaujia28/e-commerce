@@ -9,7 +9,7 @@ import Footer from '../components/footer/Footer'
 const Shop = () => {
   return (
     <div className='Shop'>
-       <Navbar/>
+       
        <Hero/>
        <Popular/>
        <Offer/>

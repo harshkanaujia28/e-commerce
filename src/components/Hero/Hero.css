@@ -1,7 +1,7 @@
 .hero-secton{
   height: 100vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   background: linear-gradient(180deg, #7dace4,#e1ffea22 60% );
 }
@@ -33,3 +33,33 @@ h3 {
     font-size: 20px;
     border-radius: 4px;
   }
+ 
+  @media (max-width :1200px) {
+    .hero-left img{
+      height: 700px;
+    }
+ }
+ @media (max-width :825px) {
+  h1{
+    font-size:40px;
+  }
+  .hero-left img{
+    height: 500px;
+  }
+  h3 {
+    
+    font-size: 20px;
+  }
+  .explore{
+    
+    height: 60px;
+    width: 200px;
+   
+  }
+}
+@media (max-width :480px) {
+  .hero-left img{
+    height: 300px;
+  }
+}
+
